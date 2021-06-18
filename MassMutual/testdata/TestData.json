@@ -1,0 +1,16 @@
+
+{
+	"Login test1": {
+		"userName": "Admin",
+		"passWord": "Admin123",
+		"location": "Inpatient Ward"
+	},
+	"TestClass2_test1": {
+		"userName": "Admin",
+		"passWord": "admin123"
+	},
+	"TestClass2_test2": {
+		"userName": "Admin",
+		"passWord": "admin123"
+	}
+}

@@ -11,7 +11,7 @@ public class Global {
 	public static final String screenShotLocation = System.getProperty("user.dir")+"\\Report\\screenShot"+System.currentTimeMillis()+".PNG";
 	public static final int waitTime = 30;
 	
-	public static final String url = "https://demo.openmrs.org/openmrs/login.htm";
+	public static final String url = "https://www.exercise1.com/values";
 	public static final boolean status = false;
 	
 	

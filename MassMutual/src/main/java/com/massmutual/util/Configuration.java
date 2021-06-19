@@ -57,6 +57,7 @@ public class Configuration{
 			return filePath;
 		} catch (Exception e) {
 			Hooks.scenario.write("Screenshot captured");
+			e.printStackTrace();
 		}
 		return null;
 
@@ -71,6 +72,7 @@ public class Configuration{
 		} 
 		catch (Exception e) {
 			Hooks.scenario.write("Unable to do click action on " + element);
+			e.printStackTrace();
 		}
 	}
 
@@ -97,7 +99,8 @@ public class Configuration{
 		}
 		}
 		catch(Exception e) {
-			Hooks.scenario.write("Unable to enter "+data+" in textbox"); 
+			Hooks.scenario.write("Unable to enter "+data+" in textbox");
+			e.printStackTrace();
 		}
 	}
 
@@ -107,6 +110,7 @@ public class Configuration{
 		}
 		catch(Exception e) {
 			Hooks.scenario.write("Current window not closed");
+			e.printStackTrace();
 		}
 	}
 
@@ -116,6 +120,7 @@ public class Configuration{
 		}
 		catch(Exception e) {
 			Hooks.scenario.write("Instance not closed properly");
+			e.printStackTrace();
 		}
 	}
 	
@@ -125,7 +130,17 @@ public class Configuration{
 			Hooks.scenario.embed(screenShot, "image/png");
 		}
 		catch(Exception e){
-			
+			e.printStackTrace();
+		}
+	}
+		
+	public void launch_app(){
+		try {
+		driver.get(Global.url);
+		}
+		catch(Exception e) {
+			Hooks.scenario.write("Application not launched");
+			e.printStackTrace();
 		}
 	}
 
